@@ -10,6 +10,9 @@ import Camp from "./pages/Camp.jsx";
 import Experience from "./pages/Experience.jsx";
 import TravelPlan from "./pages/TravelPlan.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
+import Signup from "./pages/signup";
+import Login from "./pages/login";
+import Private from "./pages/private";
 
 import injectContext from "./store/appContext";
 
@@ -34,6 +37,10 @@ const Layout = () => {
                         <Route element={<Experience />} path="/Experience" />
                         <Route element={<TravelPlan />} path="/TravelPlan" />
                         <Route element={<AboutUs />} path="/AboutUs" />
+                        <Route element={<Signup />} path="/signup" />
+                        <Route element={<Login />} path="/login" />
+                        <Route element={<Private />} path="/private" />
+
                         <Route element={<Demo />} path="/demo" />
                         <Route element={<Single />} path="/single/:theid" />
                         <Route element={<h1>Not found!</h1>} />
